@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Registrar Escuela</title>
+    <title>School Gestor | Registrar Escuela</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="assets/js/bootstrap.js">
     <link rel="stylesheet" href="assets/css/fondo.css">
@@ -35,10 +35,11 @@
     <span style="--1: 28"></span>
 </div>
 </div>
-
 <header class="header">
     <div class="logo">
-        <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        <a href="index.jsp">
+            <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        </a>
     </div>
     <nav>
         <ul class="nav-links">
@@ -46,23 +47,17 @@
             <li><b><a href="nuevaEscuela.jsp">Agregar</a></b></li>
         </ul>
     </nav>
-    <a class="btn" href="#"><button>Acceder</button></a>
-
-    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
     <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
             <a href="index.jsp">Inicio</a>
             <a href="nuevaEscuela.jsp">Agregar</a>
-            <a href="#">Acceder</a>
         </div>
     </div>
 </header>
-
 <div class="container">
     <h1>Registrar Escuela</h1>
-    <form action="" method="get" class="formulario">
+    <form action="/Escuela_Trabajo_9_war_exploded/CreateEscuela" method="get" class="formulario">
       <div class="form-group">
         <label for="id">ID:</label>
         <input

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio</title>
+    <title>School Gestor | Inicio</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="assets/js/bootstrap.js">
     <link rel="stylesheet" href="assets/css/fondo.css">
@@ -43,7 +43,9 @@
 
 <header class="header">
     <div class="logo">
-        <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        <a href="index.jsp">
+            <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        </a>
     </div>
     <nav>
         <ul class="nav-links">
@@ -51,20 +53,14 @@
             <li><b><a href="nuevaEscuela.jsp">Agregar</a></b></li>
         </ul>
     </nav>
-    <a class="btn" href="#"><button>Acceder</button></a>
-
-    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
     <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
             <a href="index.jsp">Inicio</a>
             <a href="nuevaEscuela.jsp">Agregar</a>
-            <a href="#">Acceder</a>
         </div>
     </div>
 </header>
-
 <div class="container-fluid">
     <div class="row">
         <h1>¿QUÉ ES SCHOOL GESTOR?</h1>
@@ -86,31 +82,34 @@
         <img class="img-fluid col-md-4" src="assets/img/Imagen_1.png" alt="Imagen de una universidad">
     </div>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h3>Nuestras Escuelas</h3>
+            <h3 style="color: white">Nuestras Escuelas</h3>
             <table class="table-bordered">
                 <thead>
-                <tr>
+                <tr style="color: white">
                     <th>#ID</th>
                     <th>Nombre de la Escuela</th>
                     <th>Dirección</th>
                     <th>Nivel Educativo</th>
-                    <th>Total de Alumnos</th>
+                    <th>Fecha de Fundación</th>
+                    <th>Alumno</th>
+                    <th>Maestros</th>
                 </tr>
                 </thead>
 
                 <tbody>
 
                 <c:forEach items="${escuelas}" var="esc">
-                    <tr>
+                    <tr style="color: white">
                         <td>${esc.id}</td>
                         <td>${esc.nombre}</td>
                         <td>${esc.direccion}</td>
                         <td>${esc.niveleducativo}</td>
+                        <td>${esc.fechaDeFundacion}</td>
                         <td>${esc.totalAlumnos}</td>
+                        <td>${esc.totalMaestros}</td>
                         <td><a href="modificarEscuela.jsp?id=${esc.id}">Modificar</a></td>
                         <td><a href="/Escuela_Trabajo_9_war_exploded/DeleteEscuela?id=${esc.id}">Eliminar</a></td>
                     </tr>
@@ -118,12 +117,10 @@
 
                 </tbody>
             </table>
+            <a href="/Escuela_Trabajo_9_war_exploded/hello-servlet">Mostrar escuelas</a>
             <a href="nuevaEscuela.jsp">Agregar Escuela Nueva</a>
-            <br/>
-            <button onclick="window.location.href='/Escuela_Trabajo_9_war_exploded/hello-servlet'">Hello Servlet</button>
         </div>
     </div>
-</div>
 <script src="assets/js/nav.js"></script>
 </body>
 </html>

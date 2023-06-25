@@ -5,7 +5,7 @@
 <%@ page import="mx.edu.utez.escuela_trabajo_9.models.Escuela" %>
 <html>
 <head>
-    <title>Modificar Escuela</title>
+    <title>School Gestor | Modificar Escuelas</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="assets/js/bootstrap.js">
     <link rel="stylesheet" href="assets/css/fondo.css">
@@ -41,7 +41,9 @@
 </div>
 <header class="header">
     <div class="logo">
-        <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        <a href="index.jsp">
+            <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+        </a>
     </div>
     <nav>
         <ul class="nav-links">
@@ -49,21 +51,14 @@
             <li><b><a href="nuevaEscuela.jsp">Agregar</a></b></li>
         </ul>
     </nav>
-    <a class="btn" href="#"><button>Acceder</button></a>
-
-    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
     <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
             <a href="index.jsp">Inicio</a>
             <a href="nuevaEscuela.jsp">Agregar</a>
-            <a href="#">Acceder</a>
         </div>
     </div>
 </header>
-
-<h1>Modifique los nuevos datos de la escuela</h1>
 <%
     List<Escuela> escuelas = (ArrayList)
             request.getSession().getAttribute("escuelas");
@@ -79,7 +74,7 @@
 <!-- FORMULARIO -->
 <div class="container">
     <h1>Actualizar Escuela</h1>
-    <form action="/Escuela_Trabajo_9_war_exploded/CreateEscuela" method="get" class="formulario">
+    <form action="/Escuela_Trabajo_9_war_exploded/UpdateEscuela" method="get" class="formulario">
       <div class="form-group">
         <label for="id">ID:</label>
         <input
