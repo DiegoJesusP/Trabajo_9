@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/fondo.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/estilosform.css">
 
 </head>
 <body>
