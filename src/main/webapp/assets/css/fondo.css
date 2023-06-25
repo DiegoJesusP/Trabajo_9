@@ -1,0 +1,57 @@
+/*-------------------------------------------------------------------------------------------*/
+/*-----------------------------------FONDO DE PANTALLA---------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+body {
+    background: #0c192c;
+  }
+  
+  .background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+  
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--1));
+  }
+  
+  .bubbles span:nth-child(even) {
+    background: #E8EAED  ;
+    box-shadow: 0 0 0 10px #E8EAED44, 
+    0 0 50px #E8EAED  , 
+    0 0 100px #E8EAED  ;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(100vh) scale(0);
+    }
+    100% {
+      transform: translateY(-10vh) scale(1);
+    }
+  }
+  

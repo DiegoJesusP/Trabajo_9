@@ -8,247 +8,10 @@
     <title>Modificar Escuela</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="assets/js/bootstrap.js">
-    <style>
-        body {
-            background: #0c192c;
-        }
+    <link rel="stylesheet" href="assets/css/fondo.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
 
-        .background-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .bubbles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .bubbles span {
-            position: relative;
-            width: 30px;
-            height: 30px;
-            background: #4fc3dc;
-            margin: 0 4px;
-            border-radius: 50%;
-            box-shadow: 0 0 0 10px #4fc3dc44,
-            0 0 50px #4fc3dc,
-            0 0 100px #4fc3dc;
-
-            animation: animate 15s linear infinite;
-            animation-duration: calc(125s / var(--1));
-        }
-
-        .bubbles span:nth-child(even) {
-            background: #E8EAED  ;
-            box-shadow: 0 0 0 10px #E8EAED44,
-            0 0 50px #E8EAED  ,
-            0 0 100px #E8EAED  ;
-        }
-
-        @keyframes animate {
-            0% {
-                transform: translateY(100vh) scale(0);
-            }
-            100% {
-                transform: translateY(-10vh) scale(1);
-            }
-        }
-
-        * {
-            margin-right: 20px;
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Nunito', sans-serif;
-            font-size: 25px;
-        }
-
-        .header {
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 85px;
-            padding: 5px 10%;
-        }
-
-        .header .logo {
-            cursor: pointer;
-            margin-right: auto;
-        }
-
-        .header .logo img {
-            height: 70px;
-            width: auto;
-            transition: all 0.3s;
-        }
-
-        .header .logo img:hover {
-            transform: scale(1.2);
-        }
-
-        .header .nav-links {
-            list-style: none;
-        }
-
-        .header .nav-links li {
-            display: inline-block;
-            padding: 0 20px;
-        }
-
-        .header .nav-links li:hover,
-            /**/
-        .overlay a:hover {
-            transform: scale(1.1);
-        }
-
-        .header .nav-links a {
-            font-size: 25px;
-            color: #000000;
-        }
-
-        .header .nav-links a:hover {
-            color: #0c192c;
-        }
-
-        /**/
-        .menu {
-            display: none;
-        }
-
-        .header .btn button,
-            /**/
-        .header .menu button {
-            margin-left: 20px;
-            font-weight: 700;
-            color: #ffffff;
-            padding: 9px 25px;
-            background: #0c192c;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-        }
-
-        .header .btn button:hover,
-            /**/
-        .header .menu button:hover {
-            background-color: #0c192c;
-            color: #437efc;
-            transform: scale(1.1);
-        }
-
-
-        /**/
-        @media screen and (max-width: 800px) {
-
-            .nav-links,
-            .btn {
-                display: none;
-            }
-
-            .menu {
-                display: inherit;
-            }
-        }
-
-
-        .header a {
-            text-decoration: none;
-        }
-
-        .header .overlay {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            background-color: rgba(33, 49, 63, .95);
-            overflow: hidden;
-            transition: all 0.3s ease 0s;
-        }
-
-        .header .overlay .overlay-content {
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .header .overlay a {
-            padding: 15px;
-            font-size: 36px;
-            display: block;
-            transition: all 0.3s ease 0s;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        .header .overlay a:hover,
-        .header .overlay a:focus {
-            color: #437efc;
-        }
-
-        .header .overlay .close {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 65px;
-        }
-
-        @media screen and (max-height:450px) {
-            .header .overlay a {
-                font-size: 20px;
-            }
-
-            .header .overlay .close {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-            }
-        }
-
-        .container-fluid {
-            background-color: white;
-            border-radius: 20px;
-            padding: 10px;
-            margin: 5%;
-            max-width: 100%;
-            overflow-x: hidden;
-            width: 90%;
-        }
-
-        .container-fluid p {
-            font-size: 20px;
-            text-align: justify;
-            width: 55%;
-            margin: 1.5%;
-        }
-
-        .container-fluid h1 {
-            font-size: 40px;
-            margin-top: 20px;
-            margin-left: 80px;
-            font-weight: bold;
-        }
-
-        .container-fluid img{
-            width: 38%;
-            height: 38%;
-            margin-left: 40px;
-        }
-    </style>
 </head>
 <body>
 <div class="background-animation">
@@ -311,33 +74,122 @@
         }
     }
 %>
-<form method="get" action="/Escuela_Trabajo_9_war_exploded/UpdateEscuela">
-    <label>Nombre</label>
-    <input type="text" name="nombre" value="<%= escuelaVacia.getNombre()%>">
-    <br>
-    <label>ID</label>
-    <input type="number" name="id" value="<%= escuelaVacia.getId()%>">
-    <br>
-    <label>Direccion</label>
-    <input type="text" name="direccion" value="<%= escuelaVacia.getDireccion()%>">
-    <br>
-    <label>Nivel Educativo</label>
-    <input type="text" name="niveleducativo" value="<%= escuelaVacia.getNiveleducativo()%>">
-    <br>
-    <label>Total de alumnos</label>
-    <input type="number" name="totalAlumnos" value="<%= escuelaVacia.getTotalAlumnos()%>">
-    <br>
-    <input type="submit" value="MODIFICAR">
-</form>
 
-<script>
-    function openNav() {
-        document.getElementById("mobile-menu").style.width = "100%";
-    }
+<!-- FORMULARIO -->
+<div class="container">
+    <h1>Actualizar Escuela</h1>
+    <form action="/Escuela_Trabajo_9_war_exploded/CreateEscuela" method="get" class="formulario">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="id"
+          name="id"
+          min="1"
+          placeholder="Ingresa el ID:"
+        />
+      </div>
+      <br />
+      <label for="nombre">Nombre:</label>
 
-    function closeNav() {
-        document.getElementById("mobile-menu").style.width = "0%";
-    }
-</script>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingresa el Nombre:"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="direccion"
+          name="direccion"
+          placeholder="Ingresa la Dirección:"
+        />
+      </div>
+      <br />
+      <div class="select-form">
+        <div class="form-group">
+          <label for="nivelEducacion">Nivel educativo:</label><br />
+          <select id="nivelEducacion" name="nivelEducacion">
+            <option value="" hidden class="option1">
+              Seleecciona un nivel educativo:
+            </option>
+            <option value="inicial">Inicial</option>
+            <option value="prescolar">Prescolar</option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="mediaSuperior">Media Superior</option>
+            <option value="superior">Superior</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fechaDeFundacion">Fecha de Fundación:</label>
+        <input
+          type="date"
+          class="form-control"
+          id="fechaDeFundacion"
+          name="fechaDeFundacion"
+          placeholder="Ingresa la Fecha de Fundación:"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="totalAlumnos">Número de Alumnos:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="totalAlumnos"
+          name="totalAlumnos"
+          min="1"
+          placeholder="Ingresa el Número de Alumnos:"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="totalMaestros">Número de Maestros:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="totalMaestros"
+          name="totalMaestros"
+          min="1"
+          placeholder="Ingresa el Número de Maestros:"
+        />
+      </div>
+      <br />
+      <div class="radio-form">
+        <div class="form-group">
+          <div>
+            <div class="radio-container">
+              <label class="radio">Escuela Pública: </label>&nbsp;&nbsp;
+              <input
+                type="radio"
+                name="tipoEscuela"
+                value="publica"
+              />
+            </div>
+            <div class="radio-container">
+              <label class="radio">Escuela Privada: </label>&nbsp;&nbsp;
+              <input type="radio" name="tipoEscuela" value="privada" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-center">
+        <input type="submit" value="Actualizar" />
+      </div>
+    </form>
+  </div>
+
+  <script src="assets/js/nav.js"></script>
+
 </body>
 </html>

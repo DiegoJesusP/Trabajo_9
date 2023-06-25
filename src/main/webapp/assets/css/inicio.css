@@ -1,0 +1,31 @@
+.container-fluid {
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 90%;
+}
+
+.container-fluid p {
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+    width: 55%;
+    margin: 1.5%;
+}
+
+.container-fluid h1 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.container-fluid img{
+    width: 38%;
+    height: 38%;
+    margin-left: 40px;
+}
