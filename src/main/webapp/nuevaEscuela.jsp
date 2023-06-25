@@ -41,12 +41,9 @@
             <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
         </a>
     </div>
-    <nav>
-        <ul class="nav-links">
-            <li><b><a href="index.jsp">Inicio</a></b></li>
-            <li><b><a href="nuevaEscuela.jsp">Agregar</a></b></li>
-        </ul>
-    </nav>
+    <a class="btn" href="nuevaEscuela.jsp"><button>Agregar Escuela</button></a>
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
     <div id="mobile-menu" class="overlay">
         <a onclick="closeNav()" href="" class="close">&times;</a>
         <div class="overlay-content">
