@@ -56,7 +56,9 @@
         </div>
     </div>
 </header>
+
 <%
+
     List<Escuela> escuelas = (ArrayList)
             request.getSession().getAttribute("escuelas");
     int id = Integer.parseInt(request.getParameter("id"));
@@ -66,6 +68,7 @@
             escuelaVacia = a;
         }
     }
+    request.getSession().setAttribute("escuelas", escuelas);
 %>
 
 <!-- FORMULARIO -->
@@ -80,6 +83,7 @@
           id="id"
           name="id"
           min="1"
+          value="<%= escuelaVacia.getId()%>"
           placeholder="Ingresa el ID:"
         />
       </div>
@@ -92,6 +96,7 @@
           class="form-control"
           id="nombre"
           name="nombre"
+          value="<%= escuelaVacia.getNombre()%>"
           placeholder="Ingresa el Nombre:"
         />
       </div>
@@ -103,15 +108,16 @@
           class="form-control"
           id="direccion"
           name="direccion"
+            value="<%= escuelaVacia.getDireccion()%>"
           placeholder="Ingresa la Dirección:"
         />
       </div>
       <br />
       <div class="select-form">
         <div class="form-group">
-          <label for="nivelEducacion">Nivel educativo:</label><br />
-          <select id="nivelEducacion" name="nivelEducacion">
-            <option value="" hidden class="option1">
+          <label for="niveleducativo">Nivel educativo:</label><br />
+          <select id="niveleducativo" name="niveleducativo">
+            <option value="<%=escuelaVacia.getNiveleducativo()%>" hidden class="option1">
               Seleecciona un nivel educativo:
             </option>
             <option value="inicial">Inicial</option>
@@ -130,6 +136,7 @@
           class="form-control"
           id="fechaDeFundacion"
           name="fechaDeFundacion"
+            value="<%= escuelaVacia.getFechaDeFundacion() %>"
           placeholder="Ingresa la Fecha de Fundación:"
         />
       </div>
@@ -142,6 +149,7 @@
           id="totalAlumnos"
           name="totalAlumnos"
           min="1"
+            value="<%= escuelaVacia.getTotalAlumnos() %>"
           placeholder="Ingresa el Número de Alumnos:"
         />
       </div>
@@ -154,6 +162,7 @@
           id="totalMaestros"
           name="totalMaestros"
           min="1"
+            value="<%= escuelaVacia.getTotalMaestros() %>"
           placeholder="Ingresa el Número de Maestros:"
         />
       </div>

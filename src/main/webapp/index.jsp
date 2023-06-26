@@ -1,8 +1,4 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="mx.edu.utez.escuela_trabajo_9.models.Escuela" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.Objects" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <!DOCTYPE html>
 <html>
@@ -80,7 +76,6 @@
         <a class="btn" href="#ver tabla"><button>Ir</button></a>
     </div>
 </div>
-
 <section id="ver tabla">
     <div class="container">
         <div class="row">

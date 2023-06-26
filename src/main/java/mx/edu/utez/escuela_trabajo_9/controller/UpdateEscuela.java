@@ -22,9 +22,12 @@ public class UpdateEscuela extends HttpServlet{
                 a.setNombre(req.getParameter("nombre"));
                 a.setDireccion(req.getParameter("direccion"));
                 a.setNiveleducativo(req.getParameter("niveleducativo"));
+                a.setFechaDeFundacion(req.getParameter("fechaDeFundacion"));
                 a.setTotalAlumnos(Integer.parseInt(req.getParameter("totalAlumnos")));
+                a.setTotalMaestros(Integer.parseInt(req.getParameter("totalMaestros")));
             }
         }
+        req.getSession().setAttribute("escuelas", escuelas);
         resp.sendRedirect("index.jsp");
     }
 }

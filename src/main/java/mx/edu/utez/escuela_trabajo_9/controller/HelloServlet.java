@@ -1,6 +1,5 @@
 package mx.edu.utez.escuela_trabajo_9.controller;
 
-import mx.edu.utez.escuela_trabajo_9.models.DaoEscuela;
 import mx.edu.utez.escuela_trabajo_9.models.Escuela;
 
 import java.io.*;
