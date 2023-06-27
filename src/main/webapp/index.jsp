@@ -4,11 +4,13 @@
 <html>
 <head>
     <title>School Gestor | Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="assets/js/bootstrap.js">
     <link rel="stylesheet" href="assets/css/fondo.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/carrusel.css">
 </head>
 <body>
 
@@ -44,6 +46,35 @@
         </div>
     </div>
 </header>
+
+<div class="carrusel">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2500">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExample" data-slide-to="1"></li>
+            <li data-target="#carouselExample" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/Imagen1_UTEZ.jpg" alt="Primera imagen del carrusel">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Imagen2_UAEM.jpg" alt="Segunda imagen del carrusel">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Imagen3_UVM.jpg" alt="Tercera imagen del carrusel">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
 
 <section id="ver tabla">
     <div class="container">
@@ -117,5 +148,7 @@
     <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos. <br>Correo: schoolgestor@gmail.com</p>
 </footer>
 <script src="assets/js/nav.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
