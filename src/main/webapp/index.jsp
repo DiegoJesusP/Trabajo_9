@@ -12,30 +12,20 @@
 </head>
 <body>
 
-<div class="background-animation">
-    <div class="bubbles">
-        <span style="--1: 11"></span>
-        <span style="--1: 12"></span>
-        <span style="--1: 24"></span>
-        <span style="--1: 10"></span>
-        <span style="--1: 14"></span>
-        <span style="--1: 23"></span>
-        <span style="--1: 18"></span>
-        <span style="--1: 16"></span>
-        <span style="--1: 19"></span>
-        <span style="--1: 20"></span>
-        <span style="--1: 22"></span>
-        <span style="--1: 25"></span>
-        <span style="--1: 18"></span>
-        <span style="--1: 21"></span>
-        <span style="--1: 15"></span>
-        <span style="--1: 13"></span>
-        <span style="--1: 26"></span>
-        <span style="--1: 17"></span>
-        <span style="--1: 13"></span>
-        <span style="--1: 28"></span>
-    </div>
-</div>
+<div class="area" >
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div >
 
 <header class="header">
     <div class="logo">
@@ -108,13 +98,13 @@
                                 <td>${esc.totalAlumnos}</td>
                                 <td>${esc.totalMaestros}</td>
                                 <td><a href="modificarEscuela.jsp?id=${esc.id}" class="btn btn-primary">Modificar</a></td>
-                                <td><a href="/Escuela_Trabajo_9_war_exploded/DeleteEscuela?id=${esc.id}" class="btn btn-danger">Eliminar</a></td>
+                                <td><a href="/Trabajo_9_war_exploded/DeleteEscuela?id=${esc.id}" class="btn btn-danger">Eliminar</a></td>
                             </tr>
                         </c:forEach>
                         </tbody>
                     </table>
                     <div class="mostrar">
-                        <a class="btn" href="/Escuela_Trabajo_9_war_exploded/hello-servlet"><button>Ver Escuelas</button></a>
+                        <a class="btn" href="/Trabajo_9_war_exploded/hello-servlet"><button>Ver Escuelas</button></a>
                     </div>
                 </div>
             </div>
