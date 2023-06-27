@@ -22,7 +22,7 @@ public class CreateEscuela extends HttpServlet{
         String id = req.getParameter("id");
         String nombre = req.getParameter("nombre");
         String direccion = req.getParameter("direccion");
-        String niveleducativo = req.getParameter("niveleducativo");
+        String niveleducativo = req.getParameter("nivelEducacion");
         String fechaDeFundacion = req.getParameter("fechaDeFundacion");
         String totalAlumnos = req.getParameter("totalAlumnos");
         String totalMaestros = req.getParameter("totalMaestros");
