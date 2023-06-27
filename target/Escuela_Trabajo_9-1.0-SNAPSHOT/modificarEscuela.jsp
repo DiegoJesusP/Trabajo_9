@@ -69,6 +69,7 @@
       <div class="form-group">
         <label for="id">ID:</label>
         <input
+                readonly
           type="number"
           class="form-control"
           id="id"
