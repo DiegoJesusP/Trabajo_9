@@ -109,7 +109,7 @@
           <label for="niveleducativo">Nivel educativo:</label><br />
           <select id="niveleducativo" name="niveleducativo">
             <option value="<%=escuelaVacia.getNiveleducativo()%>" hidden class="option1">
-              Seleecciona un nivel educativo:
+              Selecciona un nivel educativo:
             </option>
             <option value="inicial">Inicial</option>
             <option value="prescolar">Prescolar</option>

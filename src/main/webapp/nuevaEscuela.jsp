@@ -86,7 +86,7 @@
           <label for="nivelEducacion">Nivel educativo:</label><br />
           <select id="nivelEducacion" name="nivelEducacion">
             <option value="" hidden class="option1">
-              Seleecciona un nivel educativo:
+              Selecciona un nivel educativo:
             </option>
             <option value="inicial">Inicial</option>
             <option value="prescolar">Prescolar</option>
