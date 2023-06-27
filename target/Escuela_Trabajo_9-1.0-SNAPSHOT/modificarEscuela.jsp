@@ -109,14 +109,14 @@
           <label for="niveleducativo">Nivel educativo:</label><br />
           <select id="niveleducativo" name="niveleducativo">
             <option value="<%=escuelaVacia.getNiveleducativo()%>" hidden class="option1">
-              Seleecciona un nivel educativo:
+              Selecciona un nivel educativo:
             </option>
-            <option value="inicial">Inicial</option>
-            <option value="prescolar">Prescolar</option>
-            <option value="primaria">Primaria</option>
-            <option value="secundaria">Secundaria</option>
-            <option value="mediaSuperior">Media Superior</option>
-            <option value="superior">Superior</option>
+            <option value="Inicial">Inicial</option>
+            <option value="Prescolar">Prescolar</option>
+            <option value="Primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+            <option value="Media Superior">Media Superior</option>
+            <option value="Superior">Superior</option>
           </select>
         </div>
       </div>
@@ -158,24 +158,6 @@
         />
       </div>
       <br />
-      <div class="radio-form">
-        <div class="form-group">
-          <div>
-            <div class="radio-container">
-              <label class="radio">Escuela Pública: </label>&nbsp;&nbsp;
-              <input
-                type="radio"
-                name="tipoEscuela"
-                value="publica"
-              />
-            </div>
-            <div class="radio-container">
-              <label class="radio">Escuela Privada: </label>&nbsp;&nbsp;
-              <input type="radio" name="tipoEscuela" value="privada" />
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="btn-center">
         <input type="submit" value="Actualizar" />
       </div>

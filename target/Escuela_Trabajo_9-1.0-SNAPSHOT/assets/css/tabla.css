@@ -1,0 +1,62 @@
+.container-md {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.titulo:hover {
+  transform: scale(1.1);
+}
+
+.contenedor {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  white-space: nowrap; /* Evita el salto de línea en el contenido largo */
+  overflow: hidden; /* Oculta el contenido desbordado */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al contenido desbordado */
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  background-color: #2e3239;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
