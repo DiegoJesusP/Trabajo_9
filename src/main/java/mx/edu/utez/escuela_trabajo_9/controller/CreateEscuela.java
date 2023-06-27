@@ -22,15 +22,18 @@ public class CreateEscuela extends HttpServlet{
         String id = req.getParameter("id");
         String nombre = req.getParameter("nombre");
         String direccion = req.getParameter("direccion");
-        String niveleducatuvo = req.getParameter("niveleducativo");
+        String niveleducativo = req.getParameter("niveleducativo");
+        String fechaDeFundacion = req.getParameter("fechaDeFundacion");
         String totalAlumnos = req.getParameter("totalAlumnos");
-        //
+        String totalMaestros = req.getParameter("totalMaestros");
 
         nuevo.setId(Integer.parseInt(id));
         nuevo.setNombre(nombre);
         nuevo.setDireccion(direccion);
-        nuevo.setNiveleducativo(niveleducatuvo);
+        nuevo.setNiveleducativo(niveleducativo);
+        nuevo.setFechaDeFundacion(fechaDeFundacion);
         nuevo.setTotalAlumnos(Integer.parseInt(totalAlumnos));
+        nuevo.setTotalMaestros(Integer.parseInt(totalMaestros));
 
         //Regisrar este animal
         List<Escuela> escuelas = (ArrayList) req.getSession().getAttribute("escuelas");

@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
+<<<<<<< HEAD
 Built-By: haust
 Build-Jdk: 11.0.18
+=======
+Built-By: alext
+Build-Jdk: Oracle OpenJDK version 11.0.18
+>>>>>>> f8b86b1f5c7926ce8d75325b9199ac38809da678
 

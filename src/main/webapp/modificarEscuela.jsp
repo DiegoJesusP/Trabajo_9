@@ -65,7 +65,7 @@
 <!-- FORMULARIO -->
 <div class="container">
     <h1>Actualizar Escuela</h1>
-    <form action="/Trabajo_9_war_exploded/UpdateEscuela" method="get" class="formulario">
+    <form action="/Escuela_Trabajo_9_war_exploded/UpdateEscuela" method="get" class="formulario">
       <div class="form-group">
         <label for="id">ID:</label>
         <input
