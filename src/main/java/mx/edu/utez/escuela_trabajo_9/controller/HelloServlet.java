@@ -22,9 +22,9 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("text/html");
 
         //id, nombre, especie,
-        Escuela e1 = new Escuela(1, "Utez", "Calle siempre viva");
-        Escuela e2 = new Escuela(2,"Uaem", "Calle de las flores");
-        Escuela e3 = new Escuela(3, "Uvm", "Calle de la alegrian");
+        Escuela e1 = new Escuela(1, "Utez", "Calle siempre viva", "Universidad", "8/23/200", 1053, 6, false);
+        Escuela e2 = new Escuela(2,"Uaem", "Calle de las flores", "Universidad", "5/3/1828", 2400, 10, false);
+        Escuela e3 = new Escuela(3, "Uvm", "Calle de la alegrian", "Universidad", "11/16/1960", 153, 20, true);
         //fenix
         List<Escuela> escuelas = new ArrayList<Escuela>();
         escuelas.add(e1);
