@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class MysqlConnector {
-    final String DBNAME = "Escuela",
+    final String DBNAME = "schoolgestor",
             USER = "root",
             PASSWORD = "root",
             TIMEZONE = "America/Mexico_City",
@@ -33,9 +33,7 @@ public class MysqlConnector {
 
     public static void main(String[] args) {
         try {
-            Connection conn= new
-
-                    MysqlConnector().connect();
+            Connection conn= new MysqlConnector().connect();
             if (conn!=null){
                 System.out.println("Conexion realizada");
                 conn.close();

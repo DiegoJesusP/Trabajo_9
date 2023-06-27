@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col-md-12">
             <h3>Nuestras Escuelas</h3>
-            <table class="table-bordered">
+            <table class="table table-striped">
                 <thead>
                 <tr>
                     <th>#ID</th>
@@ -34,6 +34,9 @@
                     <th>Dirección</th>
                     <th>Nivel Educativo</th>
                     <th>Total de Alumnos</th>
+                    <th>Fecha de fundacion</th>
+                    <th>Total de maestros</th>
+                    <th>Tipo de escuela</th>
 
                 </tr>
                 </thead>
@@ -47,6 +50,11 @@
                         <td>${esc.direccion}</td>
                         <td>${esc.niveleducativo}</td>
                         <td>${esc.totalAlumnos}</td>
+                        <td>${esc.fechaDeFundacion}</td>
+                        <td>${esc.totalMaestros}</td>
+
+                        <td>${esc.status}</td>
+
                         <td><a href="modificarEscuela.jsp?id=${esc.id}">Modificar</a></td>
                         <td><a href="/Escuela_Trabajo_9_war_exploded/DeleteEscuela?id=${esc.id}">Eliminar</a></td>
                     </tr>

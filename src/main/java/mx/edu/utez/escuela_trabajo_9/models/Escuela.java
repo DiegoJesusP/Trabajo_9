@@ -5,10 +5,10 @@ public class Escuela {
     private String nombre;
     private String direccion;
     private String niveleducativo;
-    private String fechaDeFundacion;
     private int totalAlumnos;
     private int totalMaestros;
-    private boolean status;//si es de paga o publica
+    private String fechaDeFundacion;
+    private String tipo;//si es de paga o publica
 
     //constructores
 
@@ -21,7 +21,7 @@ public class Escuela {
         this.direccion = direccion;
     }
 
-    public Escuela(int id, String nombre, String direccion, String niveleducativo, String fechaDeFundacion, int totalAlumnos, int totalMaestros, boolean status) {
+    public Escuela(int id, String nombre, String direccion, String niveleducativo, String fechaDeFundacion, int totalAlumnos, int totalMaestros, String tipo) {
         this.id = id;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -29,7 +29,7 @@ public class Escuela {
         this.fechaDeFundacion = fechaDeFundacion;
         this.totalAlumnos = totalAlumnos;
         this.totalMaestros = totalMaestros;
-        this.status = status;
+        this.tipo = tipo;
     }
 
     //getter and setter
@@ -90,11 +90,11 @@ public class Escuela {
         this.totalMaestros = totalMaestros;
     }
 
-    public boolean isStatus() {
-        return status;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

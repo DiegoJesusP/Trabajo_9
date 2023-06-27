@@ -1,6 +1,5 @@
 package mx.edu.utez.escuela_trabajo_9.controller;
 
-import mx.edu.utez.escuela_trabajo_9.models.DaoEscuela;
 import mx.edu.utez.escuela_trabajo_9.models.Escuela;
 
 import java.io.*;
@@ -10,7 +9,6 @@ import java.util.List;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;
 

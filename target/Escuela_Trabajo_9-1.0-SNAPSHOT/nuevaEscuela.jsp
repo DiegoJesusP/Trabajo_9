@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>Registrar Escuela</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/js/bootstrap.js">
+
+
 </head>
 <body>
 <h1>Ingrese los  datos de la nueva escuela</h1>
