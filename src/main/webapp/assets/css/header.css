@@ -10,11 +10,11 @@
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(46, 50, 57, 0.8);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 85px;
+    height: 100px;
     padding: 5px 10%;
 }
 
@@ -24,9 +24,13 @@
 }
 
 .header .logo img {
-    height: 70px;
+    height: 75px;
     width: auto;
     transition: all 0.3s;
+}
+
+.card-subtitle{
+    margin-top: 5%;
 }
 
 .header .logo img:hover {
@@ -69,7 +73,7 @@
     font-weight: 700;
     color: #ffffff;
     padding: 9px 25px;
-    background: #0c192c;
+    background: transparent;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -79,7 +83,7 @@
 .header .btn button:hover,
 /**/
 .header .menu button:hover {
-    background-color: #0c192c;
+    background-color: rgba(95, 122, 219);
     color: #ffffff;
     transform: scale(1.1);
 }
@@ -110,7 +114,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(33, 49, 63, .95);
+    background-color: rgba(162, 178, 238, 0.8);
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }

@@ -1,5 +1,5 @@
 .container-fluid {
-    background-color: rgba(33, 49, 63, .95);
+    background-color: rgba(72, 76, 80, 0.7);
     overflow: hidden;
     border-radius: 20px;
     padding: 10px;
@@ -12,16 +12,22 @@
     color: white;
     font-size: 25px;
     text-align: justify;
-    width: 55%;
     margin: 1.5%;
+    width:97%;
 }
 
 .container-fluid h1 {
+    text-align: center;
     color: white;
     margin-top: 20px;
-    margin-left: 80px;
     font-weight: bold;
+    transition: transform 0.2s;
 }
+
+.container-fluid h1:hover {
+    transform: scale(1.1);
+}
+
 
 .container-fluid img{
     width: 38%;
@@ -34,7 +40,7 @@
     font-weight: 700;
     color: #ffffff;
     padding: 10px 40px;
-    background: #0c192c;
+    background: #484c50;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -42,17 +48,23 @@
 }
 
 .btn button:hover {
-    background-color: #ffffff;
-    color: #0c192c;
+    background-color: rgba(95, 122, 219);
+    color: rgb(255, 255, 255);
     transform: scale(1.1);
 }
 
-.card-subtitle{
+.card-subtitle {
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 70px;
+    transition: transform 0.3s;
 }
+
+.card-subtitle:hover {
+    transform: scale(1.1);
+}
+
 
 .table{
     margin-top: 2%;
@@ -82,4 +94,15 @@
 .mostrar{
     margin-top: 2%;
     text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(46, 50, 57, 0.8);
+    color: white;
+    padding: 5px 10%;
+}
+
+.footer h3{
+    margin-top: 1%;
 }

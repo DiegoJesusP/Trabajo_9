@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/inicio.css">
     <link rel="stylesheet" href="assets/css/estilosform.css">
-
 </head>
 <body>
 
@@ -31,10 +30,10 @@
     </ul>
 </div >
 
-<header class="header">
+<header class="header sticky-top">
     <div class="logo">
         <a href="index.jsp">
-            <img src="assets/img/LOGO_PAGINA.png" alt="Logo de la marca">
+            <img src="assets/img/logo_blanco.png" alt="Logo de la marca">
         </a>
     </div>
     <a class="btn" href="nuevaEscuela.jsp"><button>Agregar Escuela</button></a>
