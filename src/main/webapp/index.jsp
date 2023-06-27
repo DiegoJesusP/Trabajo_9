@@ -104,7 +104,7 @@
                         </tbody>
                     </table>
                     <div class="mostrar">
-                        <a class="btn" href="/Trabajo_9_war_exploded/hello-servlet"><button>Ver Escuelas</button></a>
+                        <a class="btn" href="/Escuela_Trabajo_9_war_exploded/hello-servlet"><button>Ver Escuelas</button></a>
                     </div>
                 </div>
             </div>
